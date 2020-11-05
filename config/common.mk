@@ -211,10 +211,10 @@ ifndef LINEAGE_BUILDTYPE
     endif
 endif
 
-# Filter out random types, so it'll reset to UNOFFICIAL
-ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
-    LINEAGE_BUILDTYPE :=
-endif
+# # Filter out random types, so it'll reset to UNOFFICIAL
+# ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
+#     LINEAGE_BUILDTYPE :=
+# endif
 
 ifdef LINEAGE_BUILDTYPE
     ifneq ($(LINEAGE_BUILDTYPE), SNAPSHOT)
