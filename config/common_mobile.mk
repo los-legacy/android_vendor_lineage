@@ -24,16 +24,27 @@ PRODUCT_PACKAGES += \
 
 # Lineage packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     Backgrounds \
     Eleven \
     Etar \
-    Jelly \
     LockClock \
     Profiles \
     Seedvault \
-    TrebuchetQuickStep \
-    WeatherProvider
+    TrebuchetQuickStep
+
+# Prebuilt packages
+PRODUCT_PACKAGES += \
+    GmsCore \
+    GsfProxy \
+    FakeStore \
+    com.google.android.maps \
+    LocalGsmNlpBackend \
+    NominatimNlpBackend \
+    additional_repos.xml \
+    AuroraServices \
+    AuroraStore \
+    AuroraDroid \
+    PdfViewer
 
 # Accents
 PRODUCT_PACKAGES += \
