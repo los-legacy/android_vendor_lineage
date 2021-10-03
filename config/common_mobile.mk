@@ -8,23 +8,20 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # AOSP packages
 PRODUCT_PACKAGES += \
-    Email \
-    ExactCalculator \
-    Exchange2
+    ExactCalculator
 
 # Lineage packages
 PRODUCT_PACKAGES += \
     Backgrounds \
     Eleven \
     Etar \
-    Jelly \
     Profiles \
     Seedvault
 
-ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
-PRODUCT_PACKAGES += \
-    AudioFX
-endif
+# ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
+# PRODUCT_PACKAGES += \
+#     AudioFX
+# endif
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
@@ -76,3 +73,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
+
+# Include Partner GMS Vendor additions
+include vendor/partner_gms/products/gms_aurora.mk
