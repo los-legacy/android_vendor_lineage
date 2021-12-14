@@ -12,14 +12,8 @@ PRODUCT_PACKAGES += \
     Eleven \
     Etar \
     ExactCalculator \
-    Jelly \
     Profiles \
     Seedvault
-
-ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
-PRODUCT_PACKAGES += \
-    AudioFX
-endif
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
@@ -62,3 +56,19 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
+
+# Include Chromium (Bromite) web browser
+PRODUCT_PACKAGES += \
+    Chromium
+
+# Include Partner GMS Vendor additions
+PRODUCT_PACKAGES += \
+    GmsCore \
+    GsfProxy \
+    FakeStore \
+    LocalGsmNlpBackend \
+    NominatimGeocoderBackend \
+    PdfViewer \
+    AuroraServices \
+    AuroraStore \
+    AuroraDroid
