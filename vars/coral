@@ -18,28 +18,27 @@ readonly firmware_partitions=(
 # Usage: ${device_repos[@]}
 device_repos=(
   device/google/coral
-  device/google/coral-sepolicy
 )
 
-# Updated manually
+# Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id=SP2A.220305.012 # Mar 2022
-readonly build_id=SP2A.220405.003 # Apr 2022
+readonly prev_build_id=SQ3A.220605.009.A1 # Jun 2022
+readonly build_id=SQ3A.220705.003.A1 # Jul 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r1"
-readonly aosp_tag="android-12.1.0_r3"
+readonly prev_aosp_tag="android-12.1.0_r7"
+readonly aosp_tag="android-12.1.0_r11"
 
-readonly prev_build_number="8177914"
-readonly build_number="8210211"
+readonly prev_build_number="8643238"
+readonly build_number="8672226"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/coral-sp2a.220405.003-factory-7c0ef94e.zip"
-readonly image_sha256="7c0ef94e4180cfb3df57f80b1cba73110d3bc6f084eed989a7eac9dc72c7d0b6"
+readonly image_url="https://dl.google.com/dl/android/aosp/coral-sq3a.220705.003.a1-factory-7d161018.zip"
+readonly image_sha256="7d16101823b6e63d453c2d31f1e81a68cf98b07aecf790e1d4d67e129d9f5793"
 
-readonly flash_url="https://flash.android.com/build/8210211?target=coral-user&signed"
+readonly flash_url="https://flash.android.com/build/8672226?target=coral-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/coral-ota-sp2a.220405.003-2238ce53.zip"
-readonly ota_sha256="2238ce5364388f91f89e61b19c1747c717f8902d6aeb866610bfe2ecc82eab95"
+readonly ota_url="https://dl.google.com/dl/android/aosp/coral-ota-sq3a.220705.003.a1-75a07f91.zip"
+readonly ota_sha256="75a07f9179f594cdf178c4d9b3e47a5818915f47464434fd7cdbbe3692ceb19f"
 
-readonly security_patch="2022-04-05"
+readonly security_patch="2022-07-05"

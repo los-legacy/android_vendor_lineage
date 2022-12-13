@@ -20,28 +20,27 @@ readonly firmware_partitions=(
 device_repos=(
   # common repos in redfin
   device/google/bramble
-  device/google/bramble-sepolicy
 )
 
-# Updated manually
+# Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id=SP2A.220305.012 # Mar 2022
-readonly build_id=SP2A.220405.003 # Apr 2022
+readonly prev_build_id=SQ3A.220605.009.A1 # Jun 2022
+readonly build_id=SQ3A.220705.003.A1 # Jul 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r1"
-readonly aosp_tag="android-12.1.0_r3"
+readonly prev_aosp_tag="android-12.1.0_r7"
+readonly aosp_tag="android-12.1.0_r11"
 
-readonly prev_build_number="8177914"
-readonly build_number="8210211"
+readonly prev_build_number="8643238"
+readonly build_number="8672226"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/bramble-sp2a.220405.003-factory-41421655.zip"
-readonly image_sha256="414216557c52a927c5ac9623910e60e478a9310ad7a7b1f0a21efc618f4fe2c5"
+readonly image_url="https://dl.google.com/dl/android/aosp/bramble-sq3a.220705.003.a1-factory-87426cb6.zip"
+readonly image_sha256="87426cb607e5d7758f14e04d2ef277438f5e7ebcc7807419171e16c77f494753"
 
-readonly flash_url="https://flash.android.com/build/8210211?target=bramble-user&signed"
+readonly flash_url="https://flash.android.com/build/8672226?target=bramble-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/bramble-ota-sp2a.220405.003-080c4046.zip"
-readonly ota_sha256="080c4046e7c63921c2df982888e37130fd2791bce3772d1cd57f57a41bb3866d"
+readonly ota_url="https://dl.google.com/dl/android/aosp/bramble-ota-sq3a.220705.003.a1-1fefa3a0.zip"
+readonly ota_sha256="1fefa3a0a8b4f0e7bde6baf008b20613312184428d754d1387e73aecda7d6f1e"
 
-readonly security_patch="2022-04-05"
+readonly security_patch="2022-07-05"

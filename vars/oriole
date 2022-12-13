@@ -20,25 +20,25 @@ device_repos=(
 # Need OTA zip for firmware, not supported by image_unpacker yet
 readonly needs_ota=true
 
-# Updated manually
+# Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id=SP2A.220305.013.A3 # Mar 2022
-readonly build_id=SP2A.220405.004 # Apr 2022
+readonly prev_build_id="SQ3A.220705.003.A1"
+readonly build_id="SQ3A.220705.004"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r2"
-readonly aosp_tag="android-12.1.0_r4"
+readonly prev_aosp_tag="android-12.1.0_r11"
+readonly aosp_tag="android-12.1.0_r22"
 
-readonly prev_build_number="8229987"
-readonly build_number="8233519"
+readonly prev_build_number="8672226"
+readonly build_number="8836240"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/oriole-sp2a.220405.004-factory-f560807e.zip"
-readonly image_sha256="f560807ed4dec7aaeedec831114f4b809d1857da6464f194903bd9413838eed4"
+readonly image_url="https://dl.google.com/dl/android/aosp/oriole-sq3a.220705.004-factory-b6f37423.zip"
+readonly image_sha256="b6f37423ff23a90021942d3bfd9d1e9605ab13431613fffc15375f3db5ec6c53"
 
-readonly flash_url="https://flash.android.com/build/8233519?target=oriole-user&signed"
+readonly flash_url="https://flash.android.com/build/8836240?target=oriole-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-sp2a.220405.004-f019343f.zip"
-readonly ota_sha256="f019343fc56cf466249580dfbdee30ae341a88d6429ecedda727097f51d41c28"
+readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-sq3a.220705.004-cd7eb344.zip"
+readonly ota_sha256="cd7eb34461a28ad8e5415a3cf53f8d5a37bece79e6d3aad13dc5fbd184283350"
 
-readonly security_patch="2022-04-05"
+readonly security_patch="2022-07-05"
