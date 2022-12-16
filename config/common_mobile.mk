@@ -58,9 +58,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
-# Include Chromium (Bromite) web browser
-PRODUCT_PACKAGES += \
-    Chromium
 
 # Include Partner GMS Vendor additions
 PRODUCT_PACKAGES += \
@@ -69,7 +66,5 @@ PRODUCT_PACKAGES += \
     FakeStore \
     LocalGsmNlpBackend \
     NominatimGeocoderBackend \
-    PdfViewer \
-    AuroraServices \
     AuroraStore \
-    AuroraDroid
+    FDroid
